@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45 28">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#outer-glow-2);
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fc0606;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        filter: url(#outer-glow-1);
+      }
+    </style>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="3"/>
+      <feFlood flood-color="#f70606" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="outer-glow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="3"/>
+      <feFlood flood-color="#f70606" flood-opacity="1"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-2" d="m20.1,17.31c.27-.84.1-1.76-.46-2.51-.71-.94-1.97-1.58-3.28-2.02s-2.7-.74-3.99-1.21c-.9-.32-1.79-.77-2.22-1.45-.12.21.2,1.55.36,1.74.82.99.42,2.3.95,3.4.55,1.14,2.07,1.89,3.64,2.14s3.42.1,5.01-.1Z"/>
+    <path class="cls-1" d="m24.91,17.77c-.27-.84-.1-1.76.46-2.51.71-.94,1.97-1.58,3.28-2.02s2.7-.74,3.99-1.21c.9-.32,1.79-.77,2.22-1.45.12.21-.2,1.55-.36,1.74-.82.99-.42,2.3-.95,3.4-.55,1.14-2.07,1.89-3.64,2.14s-3.42.1-5.01-.1Z"/>
+  </g>
+</svg>

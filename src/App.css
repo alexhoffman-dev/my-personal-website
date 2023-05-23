@@ -1,38 +1,229 @@
-.App {
-  text-align: center;
+body {
+    margin: 0px; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light-mode {
+    opacity: 1; 
+
+}
+.parent-background {
+    /* background-image: url('./assets/light/website-background.png'); */
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% ;
+    background-position: center;
+    display: grid;
+    grid-template-columns: .5fr min-content .5fr;
+    /* transition: ease-in background-image 1s;  */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.absolute-container {
+    width: min-content;
+    position: relative;
+    box-shadow: -5px 5px 15px 2px grey;
+}
+
+#background-image { 
+    transition: src 4s; 
+
+}
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 75%;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FCE11D;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 85%;
+    width: 40%;
+    left: 5%;
+    top: 7%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #847718;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #847718;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(125%);
+    -ms-transform: translateX(125%);
+    transform: translateX(125%);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#light-switch {
+    position: absolute;
+    top: 4%;
+    left: 47.25%;
+    height: 6%;
+    width: 8%;
+}
+
+#background-image { 
+    max-height: 100vh;
+    display: block;
+}
+
+#portal-gun {
+    position: absolute; 
+    top: 63.5%;
+    left: 16%;
+    height:12%; 
+}
+
+#planetarium {
+    position: absolute;
+    top: 55%;
+    left: 4%; 
+    height: 9%;
+}
+
+#dark-planetarium {
+    position: absolute;
+    top: 54%;
+    left: 3.2%; 
+    height: 11.75%;
+}
+
+#pokeball {
+    position: absolute;
+    top: 68.5%;
+    left: 37.5%;
+    height: 8%;
+}
+
+#dark-pokeball {
+    position: absolute;
+    top: 66.75%;
+    left: 35.75%;
+    height: 11.75%;
+}
+
+#fannypack {
+    position: absolute;
+    top: 68.75%;
+    left: 3%;
+    height: 8%;
+}
+
+#dark-fannypack {
+    position: absolute;
+    top: 66.9%;
+    left: 2%;
+    height: 10.5%
+}
+#tic-tac-toe {
+    position: absolute;
+    top: 66%;
+    left: 28%;
+    height: 10%;
+}
+#spooky-eyes {
+    position: absolute;
+    top: 75.75%;
+    left: 49.4%;
+    height: 2.8%; 
+}
+#snoozing {
+    position: absolute;
+    top: 70%;
+    left: 85%; 
+    height: 13%; 
+    animation: snooze 4s infinite,
+               fade 4s infinite; 
+}
+
+#portal-gun:hover {
+    animation: float 2s;
+    animation-iteration-count: infinite;
+}
+
+#pokeball:hover, #dark-pokeball:hover {
+    animation: rotate 2s;
+    animation-iteration-count:infinite; 
+}
+
+@keyframes float {
+    0% { transform: translate(0px, calc(5px * sin(0 * 6.2831))); }
+    10% { transform: translate(0px, calc(5px * sin(0.1 * 6.2831))); }
+    20% { transform: translate(0px, calc(5px * sin(0.2 * 6.2831))); }
+    30% { transform: translate(0px, calc(5px * sin(0.3 * 6.2831))); }
+    40% { transform: translate(0px, calc(5px * sin(0.4 * 6.2831))); }
+    50% { transform: translate(0px, calc(5px * sin(0.5 * 6.2831))); }
+    60% { transform: translate(0px, calc(5px * sin(0.6 * 6.2831))); }
+    70% { transform: translate(0px, calc(5px * sin(0.7 * 6.2831))); }
+    80% { transform: translate(0px, calc(5px * sin(0.8 * 6.2831))); }
+    90% { transform: translate(0px, calc(5px * sin(0.9 * 6.2831))); }
+    100% { transform: translate(0px, calc(5px * sin(1 * 6.2831))); }
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @keyframes rotate {
+    0% { transform:  rotate(10deg); }
+    5% { transform: rotate((1 * 18)deg); }
+    10% { transform: rotate((2 * 18)deg); }
+    15% { transform: rotate((3 * 18)deg); }
+    20% { transform: rotate((4 * 18)deg); }
+    25% { transform: rotate((5 * 18)deg); }
+    30% { transform: rotate((6 * 18)deg); }
+    35% { transform: rotate((7 * 18)deg); }
+    40% { transform: rotate((8 * 18)deg); }
+    45% { transform: rotate((9 * 18)deg); }
+    50% { transform: rotate((10 * 18)deg); }
+    55% { transform: rotate((11 * 18)deg); }
+    60% { transform: rotate((12 * 18)deg); }
+    65% { transform: rotate((13 * 18)deg); }
+    70% { transform: rotate((14 * 18)deg); }
+    75% { transform: rotate((15 * 18)deg); }
+    80% { transform: rotate((16 * 18)deg); }
+    85% { transform: rotate((17 * 18)deg); }
+    90% { transform: rotate((18 * 18)deg); }
+    95% { transform: rotate((19 * 18)deg); }
+    100% { transform: rotate(360deg); }
   }
-  to {
-    transform: rotate(360deg);
+
+  @keyframes snooze {
+    from {top: 69%; left: 85%}
+    to {top: 65%; left: 85% }
   }
-}
+
+  @keyframes fade {
+    from {opacity: 0}
+    15% {opacity: 1}
+    to {opacity: 0}
+  }

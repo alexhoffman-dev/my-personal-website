@@ -1,0 +1,52 @@
+
+
+/* Styles for the slide menu */
+.bm-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f4eac6;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Styles for the menu items */
+.bm-item {
+  display: block;
+  padding: 0.8rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.bm-item:hover {
+  color: #ff5500;
+}
+
+/* Styles for the close button */
+.bm-cross-button {
+  height: 2rem;
+  width: 2rem;
+}
+
+.bm-cross {
+  background: #333;
+}
+
+/* Styles for the hamburger menu icon */
+.bm-burger-button {
+  position: fixed;
+  width: 3rem;
+  height: 2rem;
+  top: 1.6rem;
+  left: 1.6rem;
+}
+
+.bm-burger-bars {
+  background: #333;
+}
+
+/* Styles for the overlay when the menu is open */
+.bm-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
