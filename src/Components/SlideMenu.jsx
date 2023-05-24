@@ -22,7 +22,7 @@ function SlideMenu() {
         <div className="menu-item" onClick={openModal}>
           About
         </div>
-        <a className="menu-item" href="https://github.com/alexhoffman-dev" target="blank">
+        <a className="menu-item" href="https://www.linkedin.com/in/alex-hoffman-89b86a237/" target="blank">
           Contact
         </a>
       </Menu>
