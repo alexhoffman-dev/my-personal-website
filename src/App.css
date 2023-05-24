@@ -4,30 +4,29 @@ body {
 
 .light-mode {
     opacity: 1; 
-
 }
+/* -------- styling for parent containers -------- */
 .parent-background {
-    /* background-image: url('./assets/light/website-background.png'); */
     width: 100vw;
     height: 100vh;
     background-size: 100% ;
     background-position: center;
     display: grid;
     grid-template-columns: .5fr min-content .5fr;
-    /* transition: ease-in background-image 1s;  */
 }
 
 .absolute-container {
-    width: min-content;
+    width: fit-content;
+    height: fit-content;
     position: relative;
     box-shadow: -5px 5px 15px 2px grey;
 }
 
 #background-image { 
     transition: src 4s; 
-
 }
 
+/* -------- styling for dark-mode light switch -------- */
 .switch {
     position: absolute;
     display: inline-block;
@@ -95,8 +94,9 @@ input:checked + .slider:before {
     width: 8%;
 }
 
+/* -------- styling for room and shelf components -------- */
 #background-image { 
-    max-height: 100vh;
+    height: 100vh;
     display: block;
 }
 
@@ -105,6 +105,11 @@ input:checked + .slider:before {
     top: 63.5%;
     left: 16%;
     height:12%; 
+}
+
+#portal-gun:hover {
+    animation: float 2s;
+    animation-iteration-count: infinite;
 }
 
 #planetarium {
@@ -133,6 +138,11 @@ input:checked + .slider:before {
     top: 66.75%;
     left: 35.75%;
     height: 11.75%;
+}
+
+#pokeball:hover, #dark-pokeball:hover {
+    animation: rotate 2s;
+    animation-iteration-count:infinite; 
 }
 
 #fannypack {
@@ -167,16 +177,6 @@ input:checked + .slider:before {
     height: 13%; 
     animation: snooze 4s infinite,
                fade 4s infinite; 
-}
-
-#portal-gun:hover {
-    animation: float 2s;
-    animation-iteration-count: infinite;
-}
-
-#pokeball:hover, #dark-pokeball:hover {
-    animation: rotate 2s;
-    animation-iteration-count:infinite; 
 }
 
 @keyframes float {
