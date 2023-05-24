@@ -11,7 +11,7 @@ import SpookyEyes from './Components/SpookyEyes';
 import snoozingDetail from './assets/dark/Z/z-s.svg';
 import lightWallpaper from './assets/light/website-background.png';
 import darkWallpaper from './assets/dark/website-dark-wallpaper.png';
-import Menu from './Components/Menu';
+import Menu from './Components/SlideMenu';
 
 const DarkModeContext = createContext();
 
