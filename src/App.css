@@ -186,11 +186,6 @@ input:checked + .slider:before {
         height: 100vh;
         position: relative;
         box-shadow: -5px 5px 15px 2px grey;
-        overflow: hidden;
-    }
-    #background-image { 
-        height: 100%;
-        display: block;
     }
 }
 /* -------- keyframe styling for animations -------- */
