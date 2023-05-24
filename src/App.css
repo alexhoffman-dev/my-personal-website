@@ -179,6 +179,16 @@ input:checked + .slider:before {
                fade 4s infinite; 
 }
 
+/* -------- styling for parent containers on phone -------- */
+@media (max-aspect-ratio: 1/1) {
+    .absolute-container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        box-shadow: -5px 5px 15px 2px grey;
+    }
+}
+/* -------- keyframe styling for animations -------- */
 @keyframes float {
     0% { transform: translate(0px, calc(5px * sin(0 * 6.2831))); }
     10% { transform: translate(0px, calc(5px * sin(0.1 * 6.2831))); }
