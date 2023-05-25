@@ -1,7 +1,4 @@
-@font-face {
-  font-family: Poppins;
-  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Space+Mono&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
 
 /* Styles for the slide menu */
 .bm-menu {
@@ -65,9 +62,9 @@
   left: 20%; 
   width: 60vw; 
   height: 60vh; 
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #6b7b5a; 
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #f4eac6;
   opacity: 95%;
   display: flex;
@@ -77,6 +74,12 @@
 }
 .custom-modal > * {
   flex-shrink: 1;
+}
+
+.custom-modal > h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin: .5em; 
 }
 
 .custom-modal > span {
@@ -91,14 +94,14 @@
 
 .custom-modal > p {
   margin: 5px 40px 5px 40px;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
+  text-align: center;
 }
 
 hr {
   border: none;
   border-top: 3px dashed #333;
 }
-
 
 @media (max-aspect-ratio: 1/1) {
   /* Styles for viewport height > width */
@@ -109,10 +112,10 @@ hr {
     left: 20%;  
     width: 60vw; 
     height: 70vh; 
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #8f7398; 
     color: #f4eac6;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
     opacity: 95%;
     display: flex;
     flex-flow: column nowrap;
@@ -122,16 +125,9 @@ hr {
 
   .custom-modal > h2 {
     margin-bottom: 10%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
   }
-  
-  /* .custom-modal > button {
-    width: 20%; 
-    height: 7%;
-    font-size: 70%;
-    margin-top: 10%;
-    background-color: lightgoldenrodyellow;
-  } */
+
   .custom-modal > span {
     position: absolute;
     top: 2%;
@@ -139,7 +135,7 @@ hr {
     cursor: pointer;
     color: white;
     font-size: 2.75vw; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
   }
   
   .custom-modal > p {
