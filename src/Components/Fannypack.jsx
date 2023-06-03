@@ -30,11 +30,11 @@ function Fannypack() {
         setIsMouseHovering(false);
       }}
     >
-      <img
+      <a href='https://github.com/alexhoffman-dev/to-do-list' target='blank'><img
         src={chooseImageSource()}
         alt="project-overflow-container"
         id={isDarkMode ? "dark-fannypack" : "fannypack"}
-      />
+      /></a>
     </div>
   );
 }
