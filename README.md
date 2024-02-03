@@ -1,6 +1,6 @@
 # PORTFOLIO WEBSITE
 
-Culmination of my front-end experience in React, vanilla JS and CSS to display some of my skills and design senseibilites for peers and prospective employers.  
+Culmination of my front-end experience in React, vanilla JS and CSS to display some of my skills and design senseibilites for peers and prospective employers. Devployed live at https://alex-hoffman.dev
 
 ## Table of Contents
 
